@@ -20,10 +20,13 @@ const checkBtn = document.getElementById("check-btn").addEventListener("click", 
   const cleanInput= isInvalidInput(textInput.value).toLowerCase();
   
   const reverse = cleanInput.split('').reverse().join('');
+
+
+   result.style.display = 'block';
   
   if (reverse === cleanInput) {
     
-    result.innerText = `${textInput.value} is a palindrome!`;
+    result.innerText = `${textInput.value} is a palindrome !`;
   } else {
     result.innerText = `${textInput.value} is  not a palindrome!`;
   }
